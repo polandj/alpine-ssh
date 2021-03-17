@@ -14,3 +14,4 @@ Alpine Linux docker image with SSH support.
 
  - This uses hardened settings, so DSA keys (and maybe others) are not supported.  If you can't login, check the log.
  - Not up-to-date? Just let me know, I'll trigger a build!!
+ 
