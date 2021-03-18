@@ -6,7 +6,7 @@ RUN apk upgrade --update && apk add openssh
 
 RUN echo "Welcome to Alpine! <http://wiki.alpinelinux.org> (polandj/aline-ssh image)" > /etc/motd
 
-RUN openssl rand -base64 20 | passwd --stdin root
+RUN openssl rand -base64 20 | passwd -u root
 
 RUN echo "PubkeyAcceptedKeyTypes=+ssh-dss" > /etc/ssh/ssh_config
 
