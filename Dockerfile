@@ -2,7 +2,7 @@ FROM alpine:latest
 MAINTAINER polandj
 
 
-RUN apk upgrade --update && apk add openssh 
+RUN apk upgrade --update && apk add openssh openssl
 
 RUN echo "Welcome to Alpine! <http://wiki.alpinelinux.org> (polandj/aline-ssh image)" > /etc/motd
 
